@@ -2,7 +2,7 @@
 import express from 'express';
 
 // Load local middleware
-import Router from './api/router.js';
+// import Router from './api/router.js';
 // import notFound from './middleware/404.js';
 // import error from './middleware/error.js';
 
