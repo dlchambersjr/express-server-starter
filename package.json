@@ -1,0 +1,43 @@
+{
+  "name": "express-server-starter",
+  "version": "1.0.0",
+  "description": "Basic Express Server Starter Pack",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test-watch": "jest --watchAll",
+    "test": "jest --runInBand",
+    "lint": "eslint '**/*.js'",
+    "debug": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlchambersjr/express-server-starter.git"
+  },
+  "author": "David Chambers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlchambersjr/express-server-starter/issues"
+  },
+  "homepage": "https://github.com/dlchambersjr/express-server-starter#readme",
+  "dependencies": {
+    "babel-env": "^2.4.1",
+    "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "superagent": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0"
+  }
+}
