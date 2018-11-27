@@ -10,21 +10,19 @@ beforeAll(startDB);
 
 afterAll(stopDB);
 
-afterEach(async () => {
-
-});
-
 describe('Test the API', () => {
 
-  it('should return Hello World', async () => {
+  it('GET should return Hello World', async () => {
 
-    const response =
-      await mockRequest.get('/');
+    const response = await mockRequest.get('/');
 
-    console.log(response.text);
+    const actual = response.text;
+    const status = response.status;
 
-    expect(response.status).toBe(200);
-    expect(response.text).toBe('Hello World');
+    expect(actual).toBe('Hello World');
+    expect(status).toBe(200);
+
   });
 
 });
+
